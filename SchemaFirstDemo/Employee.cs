@@ -7,22 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication3
+namespace SchemaFirstDemo
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Department
+    public partial class Employee
     {
-        public Department()
-        {
-            this.Employees = new HashSet<Employee>();
-        }
-    
         public int ID { get; set; }
-        public string Name { get; set; }
-        public string Location { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Gender { get; set; }
+        public Nullable<int> Salary { get; set; }
+        public Nullable<int> DepartmentId { get; set; }
     
-        public virtual ICollection<Employee> Employees { get; set; }
+        public virtual Department Department { get; set; }
     }
 }

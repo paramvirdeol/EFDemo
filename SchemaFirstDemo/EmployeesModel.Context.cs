@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication3
+namespace SchemaFirstDemo
 {
     using System;
     using System.Data.Entity;
