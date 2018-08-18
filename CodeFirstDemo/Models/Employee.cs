@@ -18,6 +18,7 @@ namespace CodeFirstDemo.Models
         public int Salary { get; set; }
         public int DepartmentId { get; set; }
         public string JobTitle { get; set; }
+
         [ForeignKey("DepartmentId")]     
         public Department Department { get; set; }
     }

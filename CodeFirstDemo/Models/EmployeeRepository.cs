@@ -10,7 +10,8 @@ namespace CodeFirstDemo.Models
         public List<Department> GetDepartments()
         {
             var dbContext = new EmployeeDBContext();
-            return dbContext.Departments.Include("Employees").ToList();
+            var dummy= dbContext.Departments.Include("Employees").ToList();
+            return dummy;
         }
     }
 }

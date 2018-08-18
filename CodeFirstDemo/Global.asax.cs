@@ -13,6 +13,7 @@ namespace CodeFirstDemo
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            //Database.SetInitializer(new DropCreateDatabaseAlways<EmployeeDBContext>());
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<EmployeeDBContext>());
         }
     }
